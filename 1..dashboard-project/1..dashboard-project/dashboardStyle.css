@@ -1,0 +1,366 @@
+* {
+    font-family: "pari";
+}
+
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+
+    grid-template-areas:
+        "header sidebar"
+        "main sidebar";
+    background-color: rgba(221, 220, 220, 0.74);
+}
+
+
+
+header {
+    grid-area: header;
+}
+
+.headerContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    background-color: white;
+}
+
+.headerContainer>h3 {
+    padding-right: 20px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding-left: 20px;
+
+}
+
+.searchBar>input {
+    width: 120px;
+    height: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.statistics {
+    display: grid;
+    grid-template: 200px / repeat(auto-fit, minmax(200px, 250px));
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+
+}
+
+
+.card {
+    border: 1px solid rgb(220, 215, 215);
+    padding: 10px;
+    background-color: white;
+    /* min-height: 200px; */
+
+}
+
+.card:hover {
+    box-shadow: 0px 3px 8px 0.8px lightgrey;
+
+}
+
+.title {
+    font-size: 14px;
+}
+
+.number {
+    font-size: 14px;
+    text-align: left;
+}
+
+.subtitle {
+    color: rgb(134, 129, 129);
+}
+
+.salaryPercentage {
+    flex-shrink: 0;
+    align-self: flex-start;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    background: conic-gradient(red 0% 58%,
+            lightgrey 58% 100%);
+}
+
+.salePercentage {
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    width: 90%;
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-color: white;
+    background: linear-gradient(to left,
+            rgb(6, 172, 70) 0% 82%,
+            lightgrey 82% 100%);
+}
+
+.statsPercentage {
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    background: conic-gradient(rgb(4, 137, 254) 0% 80%,
+            lightgrey 80% 100%);
+}
+
+.dailyPercentage {
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    width: 90%;
+    border-width: 2px;
+    border-bottom-style: solid;
+    border-color: white;
+    background: linear-gradient(to left,
+            pink 0% 79%,
+            lightgrey 79% 100%);
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.chartCard>h5 {
+    margin: 0 0 10px;
+}
+
+
+.chartBox {
+    position: relative;
+    height: 260px;
+}
+
+.personnel {
+    display: grid;
+    grid-template: 180px/ repeat(auto-fit, minmax(220px, 280px));
+
+    margin-bottom: 30px;
+}
+
+.PCard {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgb(216, 214, 214);
+    background-color: white;
+
+}
+
+.PCard:hover {
+    box-shadow: 0px 3px 8px 0.8px lightgrey;
+}
+
+.PCard>img {
+    flex-shrink: 0;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.email {
+    overflow-wrap: anywhere;
+    color: rgb(134, 129, 129)
+}
+
+.fJobTitle {
+    color: #FFD51E;
+}
+
+.sJobTitle {
+    color: #06D6A0;
+}
+
+.TJobTitle {
+    color: #AB03A9;
+}
+
+.FOJobTitle {
+    color: #DF301C;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: white;
+}
+
+.Ptitle {
+    color: #1DCED8;
+    text-align: center;
+}
+
+aside>div {
+    text-align: center;
+}
+
+aside>div>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navTitle {
+    padding-right: 15px;
+    color: rgb(134, 129, 129);
+}
+
+nav>ul>li {
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    color: black;
+    text-decoration: none;
+}
+
+nav>ul>li>a:hover {
+    color: #0bb6bf;
+}
+
+.sideIcon {
+    font-size: 18px;
+    transition: 2s ease;
+    cursor: pointer;
+}
+
+.sideIcon:hover {
+    transform: rotate(360deg);
+}
+
+.sideIcon:active {
+    transform: scale(.97);
+}
+
+
+.hambergur.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hambergur.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hambergur.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.hambergur {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+    position: relative;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.hambergur>span {
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: black;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.list-menu {
+    display: none;
+}
+
+.list-menu.open {
+    display: block;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "header"
+            "main";
+    }
+
+    .hambergur {
+        display: flex;
+    }
+
+    .charts {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: -270px;
+        width: 250px;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+    }
+
+    aside.open {
+        left: 0;
+    }
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'pari';
+    src: url(../fonts/Parasto/Parasto/Parastoo-Print-FD-WOL.ttf);
+}

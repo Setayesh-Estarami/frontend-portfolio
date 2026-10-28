@@ -1,0 +1,218 @@
+/* Color palette:
+   Black: #000000
+   Dark red: #830000
+   Red: #BC0202 
+   Bright red: #FF0000
+*/
+
+:root {
+  --black: #000000;
+  --dark-red: #830000;
+  --red: #BC0202;
+  --bright-red: #FF0000;
+  --light-bg: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #222;
+  line-height: 1.8;
+}
+
+.site-navbar {
+  background-color: var(--black);
+}
+
+.site-navbar .navbar-brand {
+  color: #fff;
+}
+
+.site-navbar .nav-link {
+  color: #eee;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus,
+.site-navbar .nav-link.active {
+  color: #ff6b6b;
+}
+
+.dropdown-menu {
+  border-top: 3px solid var(--red);
+}
+
+.dropdown-item:active {
+  background-color: var(--dark-red);
+}
+
+.hero-section {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(131, 0, 0, 0.65)),
+    url("./images/hero.jfif") center / cover no-repeat;
+}
+
+.hero-content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.testimonials-section blockquote {
+  font-size: 1rem;
+}
+
+.btn-danger {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: var(--dark-red);
+  border-color: var(--dark-red);
+}
+
+.features-section {
+  background-color: var(--light-bg);
+}
+
+.section-title {
+  color: var(--dark-red);
+}
+
+.feature-card {
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  border-bottom: 4px solid var(--red);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--dark-red);
+}
+
+.about-section {
+  background-color: #fff;
+}
+
+.about-panel {
+  height: 100%;
+  background-color: #f7eeee;
+  border-right: 5px solid var(--red);
+  border-radius: 8px;
+}
+
+.contact-section {
+  background-color: var(--light-bg);
+}
+
+.contact-form {
+  background-color: #fff;
+  border-radius: 12px;
+  border-top: 4px solid var(--dark-red);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.form-control {
+  text-align: right;
+}
+
+.form-control:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 0.2rem rgba(188, 2, 2, 0.15);
+}
+
+.modal-header {
+  border-bottom: 2px solid var(--red);
+}
+
+.modal-title {
+  color: var(--dark-red);
+}
+
+.site-footer {
+  color: #fff;
+  background-color: var(--black);
+}
+
+.footerLinks>a {
+  color: rgb(160, 157, 157);
+  text-decoration: none;
+  padding: 15px;
+}
+
+
+
+.testimonials-section {
+  background-color: var(--dark-red);
+  color: #fff;
+}
+
+
+.testimonials-section .section-title {
+  color: #fff;
+}
+
+
+.testimonials-section .carousel-item {
+  padding: 0 3rem 3rem;
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+
+.testimonial-role {
+  color: #f0c4c4;
+  font-size: 0.9rem;
+}
+
+.back-to-top {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+
+  .hero-section {
+    min-height: 340px;
+  }
+
+  .hero-content {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .testimonials-section blockquote {
+    font-size: 1.15rem;
+    line-height: 1.9;
+  }
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>وب‌سایت من</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./bootstrapProjectStyle.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#siteNav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+    tabindex="0">
+
+
+    <nav class=" navbar navbar-dark site-navbar border-light navbar-expand-md sticky-top" id="siteNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">وب‌سایت من</a>
+
+            <button class="navbar-toggler border-light " type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="منوی کشویی">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#home">خانه</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a type="button" class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+                            data-bs-toggle="dropdown">
+                            خدمات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#feature-1"> کیفیت بالا</a></li>
+                            <li><a class="dropdown-item" href="#feature-2">ایده‌های خلاقانه</a></li>
+                            <li><a class="dropdown-item" href="#feature-3"> پشتیبانی مطمئن</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">درباره ما</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">نظرات </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تماس</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <header class="hero-section" id="home">
+        <div class="container hero-content text-center">
+            <h1 class="display-5 fw-bold">به وب‌سایت ما خوش آمدید</h1>
+            <p class="lead mt-3">اینجا می‌توانید با خدمات و امکانات ما آشنا شوید.</p>
+
+
+            <button type="button" class="btn btn-danger mt-3 px-4" data-bs-toggle="modal" data-bs-target="#infoModal">
+                بیشتر بدانید
+            </button>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="features-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title fw-bold"> به دنیای ما خوش آمدید</h2>
+                    <p class="text-secondary">تجربه‌ای متفاوت، با کیفیتی که شایسته شماست.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4" id="feature-1">
+                        <article class="feature-card h-100 text-center p-4">
+                            <img src="./images/image 1.jfif" alt="تصویر خدمات اول" class="feature-image mb-3">
+                            <h3 class="h5 fw-bold">کیفیت بالا</h3>
+                            <p>ما تلاش می‌کنیم با ارائه خدمات باکیفیت،
+                                تجربه‌ای خوب و رضایت‌بخش برای شما ایجاد کنیم.</p>
+                        </article>
+
+                    </div>
+
+                    <div class="col-md-4" id="feature-2">
+                        <article class="feature-card h-100 text-center p-4">
+                            <img src="./images/idea.jfif" alt="تصویر خدمات دوم" class="feature-image mb-3">
+                            <h3 class="h5 fw-bold">ایده‌های خلاقانه</h3>
+                            <p> با ایده‌های تازه و راهکارهای کاربردی،
+                                تجربه‌ای متفاوت برای شما فراهم می‌کنیم.</p>
+                        </article>
+
+                    </div>
+
+                    <div class="col-md-4" id="feature-3">
+                        <article class="feature-card h-100 text-center p-4">
+                            <img src="./images/support.jfif" alt="تصویر خدمات سوم" class="feature-image mb-3">
+                            <h3 class="h5 fw-bold">پشتیبانی مطمئن</h3>
+                            <p> رضایت شما برای ما اهمیت دارد.
+                                در تمام مراحل همراه شما هستیم.</p>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section py-5" id="about">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <h2 class="section-title fw-bold mb-3">درباره ما</h2>
+                        <p class="mb-0">
+                            هدف ما ارائه تجربه‌ای ساده، کاربردی و باکیفیت
+                            برای تمام کاربران است.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="about-panel p-4">
+                            <h3 class="h5 fw-bold">چرا ما را انتخاب کنید؟</h3>
+                            <p class="mb-0">
+                                تلاش می‌کنیم تجربه‌ای ساده، کاربردی و قابل اعتماد برای کاربران فراهم کنیم.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section py-5" id="testimonials">.
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="section-title fw-bold mb-3">نظرات مشتریان</h2>
+                    <p class="mb-0">آنچه کاربران درباره ما می‌گویند</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel"
+                                    data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel"
+                                    data-bs-slide-to="2"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active text-center" data-bs-interval="5000">
+                                    <img src="./images/user 1.png"
+                                        class="testimonial-avatar rounded-circle mb-3" alt="user profile 1">
+                                    <blockquote class="mb-3">خدمات عالی و پشتیبانی سریع. تجربه‌ای که واقعاً رضایت‌بخش
+                                        بود و حتماً دوباره از آن استفاده می‌کنم.</blockquote>
+                                    <p class="fw-bold mb-0">نیکان غلامی</p>
+                                    <p class="testimonial-role">طراح وب</p>
+                                </div>
+
+                                <div class="carousel-item text-center" data-bs-interval="5000">
+                                    <img src="./images/user 2.png"
+                                        class="testimonial-avatar rounded-circle mb-3" alt="user profile 2">
+                                    <blockquote class="mb-3">تجربه خیلی خوبی داشتم. طراحی سایت ساده و جذابه و دسترسی به
+                                        بخش‌های مختلف خیلی راحت انجام می‌شه. قطعاً استفاده از خدماتش رو پیشنهاد می‌کنم.
+                                    </blockquote>
+                                    <p class="fw-bold mb-0">نگار احمدی</p>
+                                    <p class="testimonial-role">طراح گرافیک</p>
+                                </div>
+
+                                <div class="carousel-item text-center" data-bs-interval="5000">
+                                    <img src="./images/user4.png"
+                                        class="testimonial-avatar rounded-circle mb-3" alt="user profile 3">
+                                    <blockquote class="mb-3">از اینکه تونستم به‌راحتی اطلاعات موردنیازم رو پیدا کنم،
+                                        خیلی
+                                        راضی بودم. طراحی جذاب و تجربه کاربری خوب، این سایت رو به انتخاب مناسبی تبدیل
+                                        کرده</blockquote>
+                                    <p class="fw-bold mb-0">سارا محمدی</p>
+                                    <p class="testimonial-role">مدیر بازاریابی</p>
+                                </div>
+
+                            </div>
+                            <button type="button" class="carousel-control-prev" data-bs-target="#testimonialCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">قبلی</span>
+                            </button>
+                            <button type="button" class="carousel-control-next" data-bs-target="#testimonialCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">بعدی</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-section py-5" id="contact">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="section-title fw-bold">با ما در تماس باشید</h2>
+                    <p class="text-secondary">فرم زیر را تکمیل کنید.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <form class="contact-form p-4">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">نام و نام خانوادگی</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="نام خود را وارد کنید"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label">ایمیل</label>
+                                <input type="email" class="form-control" id="emailAddress"
+                                    placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">پیام شما</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="پیام خود را بنویسید..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-danger">ارسال پیام</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="infoModalLabel">اطلاعات بیشتر</h2>
+                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="بستن"></button>
+                </div>
+                <div class="modal-body">
+                    این بخش برای نمایش توضیحات تکمیلی درباره وب‌سایت یا خدمات است.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="container py-4">
+
+        <hr>
+
+        <div class="row align-items-center text-center">
+
+            <div class="col-md-6 mb-2 mb-md-0">
+                <p class="mb-0">
+                    © ۱۴۰۵ - تمامی حقوق محفوظ است.
+                </p>
+            </div>
+
+            <div class="footerLinks col-md-6">
+                <a href="#home" class="footer-link">صفحه اصلی</a>
+                <a href="#about" class="footer-link">درباره ما</a>
+                <a href="#testimonials" class="footer-link">نظرات</a>
+                <a href="#contact" class="footer-link">تماس با ما</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <a class="back-to-top position-fixed bottom-0 end-0 m-4 btn btn-danger rounded-circle " href="#home" aria-label="برگشت به بالا"><i class="fa-solid fa-arrow-up-long"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

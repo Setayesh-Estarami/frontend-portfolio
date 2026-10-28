@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboardStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>dashboard</title>
+</head>
+
+<body class="layout">
+    <header>
+        <div class="headerContainer">
+            <h3>داشبورد</h3>
+            <div class="searchBar">
+                <span class="fa-solid fa-bell"></span>
+                <span class="fa-solid fa-search"></span>
+                <input type="search" placeholder="searching...">
+
+                <nav class="hambergur" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- stats -->
+        <section class="statistics">
+            <div class="card totalSalary">
+                <div class="statContent">
+                    <h5 class="title">درآمد کل</h5>
+                    <h5 class="number">1,000,000 <sub class="subtitle">درآمد روزانه</sub></h5>
+                    <h5 class="salaryPercentage">58%</h5>
+                </div>
+            </div>
+            <div class="card saleAnalysis">
+                <div class="statContent">
+                    <h5 class="title">آنالیز فروش</h5>
+                    <h5 class="number">1,540,000 <sub class="subtitle">درآمد امروز</sub></h5>
+                    <h5 class="salePercentage">82%</h5>
+                </div>
+            </div>
+            <div class="card stats">
+                <div class="statContent">
+                    <h5 class="title">آمار</h5>
+                    <h5 class="number">4569 <sub class="subtitle">آمار امروز</sub></h5>
+                    <h5 class="statsPercentage">80%</h5>
+                </div>
+            </div>
+            <div class="card dailySales">
+                <div class="statContent">
+                    <h5 class="title">فروش روزانه</h5>
+                    <h5 class="number">158 <sub class="subtitle">فروش امروز</sub></h5>
+                    <h5 class="dailyPercentage">79%</h5>
+                </div>
+            </div>
+        </section>
+        <!-- charts -->
+        <section class="charts">
+            <div class="card chartCard">
+                <h5>درآمد ماهانه</h5>
+                <div class="chartBox">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card chartCard">
+                <h5>فروش هفتگی</h5>
+                <div class="chartBox">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+        </section>
+        <!-- pesonnel info -->
+        <section class="personnel">
+            <div class="PCard">
+                <img src="./images/girl1.jpg" alt="personnel img">
+                <div class="content">
+                    <h4 class="name">رکسانا کریمی</h4>
+                    <h5 class="email">roxannakamiri@gmail.com</h5>
+                    <h5 class="fJobTitle">مدیر عامل</h5>
+                </div>
+            </div>
+            <div class="PCard">
+                <img src="./images/guy1.jpg" alt="personnel img">
+                <div class="content">
+                    <h4 class="name">رایان حسینی</h4>
+                    <h5 class="email">hossainiRayan@gmail.com</h5>
+                    <h5 class="sJobTitle">بازاریاب</h5>
+                </div>
+            </div>
+            <div class="PCard">
+                <img src="./images/girl2.jpg" alt="personnel img">
+                <div class="content">
+                    <h4 class="name">سونا بی‌نیاز</h4>
+                    <h5 class="email">sonabiniyaz@gmail.com</h5>
+                    <h5 class="TJobTitle">مدیر مالی</h5>
+                </div>
+            </div>
+            <div class="PCard">
+                <img src="./images/guy2.jpg" alt="personnel img">
+                <div class="content">
+                    <h4 class="name">رضا غوبادی</h4>
+                    <h5 class="email">rezaghobadi@gmail.com</h5>
+                    <h5 class="FOJobTitle">برنامه‌نویس</h5>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <h2 class="Ptitle"> ادمین</h2>
+        <div>
+            <img src="./images/girl1.jpg" alt="image">
+            <h4>رکسانا کریمی</h4>
+            <i class="fa-solid fa-gear sideIcon"></i>
+        </div>
+        <h5 class="navTitle">دسته‌بندی ها</h5>
+        <nav class="list-menu">
+            <ul>
+                <li><a href="#">داشبورد</a></li>
+                <li> <a href="#">نوشته ها</a></li>
+                <li> <a href="#">روابط کاری</a></li>
+                <li> <a href="#">فرم ها</a></li>
+                <li><a href="#">تقویم</a></li>
+                <li><a href="#">ایمیل</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock|paper|scissors Game</title>
+    <link rel="stylesheet" href="./RPSgame.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="rainbow"></div>
+    <div class="rainbow"></div>
+    <div class="rainbow"></div>
+
+    <header>
+        <h2>Rock | paper | scissors </h2>
+        <p>let's have some fun! <i class="fa-solid fa-face-smile-wink"></i></p>
+    </header>
+    <main>
+        <section class="buttonGroup">
+            <div class="buttonItems">
+                <button class="RockBtn" onclick="playGame('Rock')"><i class="fa-solid fa-hand-fist"></i></button>
+
+                <button class="PaperBtn" onclick="playGame('paper')"><i class="fa-solid fa-hand"></i></button>
+
+                <button class="ScissorsBtn" onclick="playGame('scissors')"><i
+                        class="fa-solid fa-hand-scissors"></i></button>
+
+            </div>
+        </section>
+
+        <section class="scoresTable">
+            <div class="scores">
+                <table>
+                    <caption>score</caption>
+                    <tr>
+                        <th>wins</th>
+                        <th>losses</th>
+                        <th>ties</th>
+                    </tr>
+                    <tr>
+                        <td id="wins">0</td>
+                        <td id="losses">0</td>
+                        <td id="ties">0</td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+        <div class="reset">
+            <button class="ResetBtn" onclick="resetScore()">reset</button>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./RPSgame-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./logInForm-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>log in/ sign in</title>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="switchCircle" class="switch">
+    <div class="forms" id="authCard">
+        <div class="cardInner">
+
+            <!-- log in card -->
+            <div class="Form log">
+                <div class="Logo">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="Header">
+                    <h1 class="title">خوش آمدین</h1>
+                    <h5 class="subTtile">برای تجربه‌‌ای بهتر، با ما همراه شو</h5>
+                </div>
+
+                <form action="#">
+
+                    <!-- username -->
+                    <div class="inputGroup">
+                        <div class="electricBorder"></div>
+                        <input class="allInputs" type="text" placeholder="username" required><br>
+                    </div>
+
+                    <!-- password -->
+                    <div class="inputGroup">
+                        <div class="electricBorder"></div>
+                        <input class="allInputs" type="password" placeholder="password" required><br>
+                    </div>
+
+                    <div class="options">
+                        <label class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            منو بخاطر بسپار
+                        </label>
+                        <a href="#">فراموشی رمز</a>
+                        <br>
+                        <button class="signInBtn">log in </button><br>
+                    </div>
+
+                </form>
+
+                <div class="switchForms">
+                    <p>هنوز به جمع ما ملحق نشدی؟</p>
+                    <button class="switchCircle" onclick="flipCard()">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <br>
+            </div>
+
+            <!-- sign in card -->
+            <div class="Form sign">
+                <div class="Logo">
+                    <span class="fa-solid fa-user"></span>
+                </div>
+                <div class="Header">
+                    <h1 class="title">به ما بپیوند</h1>
+                    <h5 class="subTtile">حسابت رو بساز و شروع کن</h5>
+                </div>
+
+                <form action="#" class="signIn">
+
+                    <!-- fulname -->
+                    <div class="inputGroup">
+                        <div class="electricBorder"></div>
+                        <input class="allInputs" type="text" placeholder="fullName" required><br>
+
+                    </div>
+
+                    <!-- email -->
+                    <div class="inputGroup">
+                        <div class="electricBorder"></div>
+                        <input class="allInputs" type="email" placeholder="email" required><br>
+
+                    </div>
+
+                    <!-- password -->
+                    <div class="inputGroup">
+                        <div class="electricBorder"></div>
+                        <input class="allInputs" type="password" placeholder="password" required><br>
+
+                    </div>
+
+                    <!-- confirm -->
+                    <div class="inputGroup">
+                        <div class="electricBorder"></div>
+                        <input class="allInputs" type="password" placeholder="confirm password" required><br>
+
+                    </div>
+                    <button class="signInBtn">sign up</button><br>
+                </form>
+
+                <div class="switchForms">
+                    <p>قبلا به ما ملحق شدی؟</p>
+                    <button class="switchCircle" onclick="flipCard()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+                <br>
+            </div>
+        </div>
+
+    </div>
+    <script src="./logInForm-script.js"></script>
+</body>
+
+</html>

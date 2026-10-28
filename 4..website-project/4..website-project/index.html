@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market</title>
+    <link rel="stylesheet" href="./productStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+<body class="layout">
+
+    <!-- shopping cart panel -->
+    <div class="cartOverlay" id="cartOverlay"></div>
+
+    <div class="cartPanel" id="cartPanel">
+        <div class="cartHeader">
+            <h3>سبد خرید</h3>
+            <button class="closeCart" id="closeCart">&times;</button>
+        </div>
+
+        <div class="cartItems" id="cartItems">
+        </div>
+
+        <div class="cartFooter">
+            <div class="cartTotal">جمع کل: <span id="cartTotalPrice">0</span> تومان</div>
+            <button class="checkoutBtn">ادامه و پرداخت</button>
+        </div>
+    </div>
+
+    <main>
+        <h1 id="GoUp"></h1>
+        <div class="sepratingLine"></div>
+
+
+        <!-- Banners -->
+        <section class="generalBanner">
+
+            <div class="banner">
+                <img src="/project/project image/banners/banner-1.webp" alt="special offers">
+            </div>
+
+            <div class="banner">
+                <img src="/project/project image/banners/banner-2.webp" alt="special offers">
+            </div>
+
+            <div class="banner">
+                <img src="/project/project image/banners/banner-3.webp" alt="special offers">
+            </div>
+
+            <div class="banner">
+                <img src="/project/project image/banners/banner4.webp" alt="special offers">
+            </div>
+
+        </section>
+
+
+        <!-- digital things -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="digital">لوازم دیجیتال</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer DigitalBG">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/wireless headphone.jpg"
+                            alt="headphone image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">هدفون های بی‌سیم بسیار راحت همراه با عمر باتری بسیار بالا</p>
+                        <h4 class="price">1.669.000 <sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/digitalCamera.jpg"
+                            alt="digital camera image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">دوربین دیجیتال کانن مناسب برای عکاسی حرفه‌ای</p>
+                        <h4 class="price">177.500.000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/play station.jpg" alt="play station image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">کنسول بازی سونی مدل PlayStation 5 Slim </p>
+                        <h4 class="price">177,321,500<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/handle play station.webp"
+                            alt="handle play station image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">دسته بازی آی پی لینک پلی استیشن ۴ مدل </p>
+                        <h4 class="price"> 3,567,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/ear phones.webp" alt="ear phone image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">هدفون بلوتوثی سامسونگ مدل Galaxy Buds 4 Pro</p>
+                        <h4 class="price"><del>42,845,600 </del> <sup>35,499,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">17%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/printing camera.jpg"
+                            alt="printing camera image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">دوربین عکاسی چاپ سریع مدل Kids Printing Camera</p>
+                        <h4 class="price"><del>7,893,900 </del> <sup>6,900,090 </sup><sup>تومان</sup><sub
+                                class="offDetail">13%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/ps5 game.png" alt="ps5 game image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">بازی ghost مخصوص ps5</p>
+                        <h4 class="price">14,321,500<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/featured products/webcam.jpeg" alt="webcam image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم دیجیتال</h3>
+                        <p class="description">دوربین مداربسته تحت شبکه وونک مدل 5MP Pro</p>
+                        <h4 class="price">6,491,500<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- mobile -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="mobile">گوشی موبایل</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer PhoneBG">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mobile/galaxy s23.jpg" alt="galaxy s23 image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: موبایل</h3>
+                        <p class="description">گوشی موبایل سامسونگ مدل S24 FE </p>
+                        <h4 class="price">169,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mobile/google pixel 11 pro.jpg"
+                            alt="google pixel 11 pro image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: موبایل</h3>
+                        <p class="description">گوشی موبایل تکنو موبایل مدل Spark 40 Pro Plus</p>
+                        <h4 class="price">70,360,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mobile/iphone 18 pro max.webp" alt="iphone 18 pro max image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: موبایل</h3>
+                        <p class="description">گوشی موبایل اپل مدل iPhone 18 Pro Max CH</p>
+                        <h4 class="price">679,999,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mobile/s26 ultra.jpg" alt="galaxy s26 ultra image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: موبایل</h3>
+                        <p class="description">گوشی موبایل سامسونگ مدل Galaxy S26 Ultra </p>
+                        <h4 class="price">374,800,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mobile/vivo x300.jpg" alt="vivo x300 image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: موبایل</h3>
+                        <p class="description">گوشی ویوو (چین) iQOO 15 </p>
+                        <h4 class="price">226,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mobile/xiaomi 18 pro.jpg" alt="xiaomi 18 pro image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: موبایل</h3>
+                        <p class="description">گوشی شیائومی 17Pro Max </p>
+                        <h4 class="price">359,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- stationery -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="stationery">لوازم تحریر</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/pencil case.webp" alt="pencil case image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">جامدادی مستر راد مدل سه زیپ طرح دایناسور کد 2786 fiory</p>
+                        <h4 class="price"><del>470,000 </del> <sup>420,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">11%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/bag1.webp" alt="bag image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">کوله پشتی مدرسه مدل گجتی به همراه آویز</p>
+                        <h4 class="price">3,400,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/butterfly shpping bag.webp"
+                            alt="butterfly shopping bag image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">ساک خرید طرح پروانه مدل Live your dreams</p>
+                        <h4 class="price"><del>600,000 </del> <sup>399,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">34%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/color.jpg" alt="color set image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">بسته لوازم تحریر مدل کیف قفل دار مجموعه 65 عددی</p>
+                        <h4 class="price">3,800,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/dianasour.webp" alt="dinasour set image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">بسته لوازم تحریر مدل دایناسور کیوت فانتزی کد NEW1 مجموعه 4 عددی</p>
+                        <h4 class="price">178,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/magic color.webp" alt="magic colors image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">ماژیک علامت گذار مدل جادویی بسته ۸ عددی</p>
+                        <h4 class="price">359,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/notebook.webp" alt="notebook image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">دفتر مشق مستر راد مدل خرس های کله فندقی طرح تحصیلی کد fiory 2145</p>
+                        <h4 class="price"><del>216,000 </del> <sup>198,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">8%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/panda pencil.webp" alt="panda pencil image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">بسته لوازم تحریر دکین مدل پاندا مجموعه 4 عددی</p>
+                        <h4 class="price">880,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/pen.webp" alt="pen image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">خودکار کریتورز کلاس مدل candid 0.5 بسته 6 عددی</p>
+                        <h4 class="price">346,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/stationery/sticker.webp" alt="sticker image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم تحریر</h3>
+                        <p class="description">برچسب مدل نام طرح کیوت مجموعه 16 عددی</p>
+                        <h4 class="price">46,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- laptop -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="laptop">لپ‌تاپ</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 1.webp" alt="macbook apple image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ 13 اینچی اپل مدل MacBook Neo </p>
+                        <h4 class="price">180,000,000</h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 2.webp" alt="lenovo laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ لنوو مدل IdeaPad </p>
+                        <h4 class="price">73,999,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 3.webp" alt="asus laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ ایسوس مدل Vivobook Go 14</p>
+                        <h4 class="price"><del>73,499,000 </del> <sup>78,000,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">6%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 4.webp" alt="macbook neo apple image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ 13 اینچی اپل مدل MacBook Neo </p>
+                        <h4 class="price">208,800,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 5.webp" alt="HP laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ 15.6 اینچی اچ‌پی مدل Victus 15 </p>
+                        <h4 class="price">178,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 6.webp" alt="asus vivobook laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ 15.6 اینچی ایسوس مدل Vivobook 15 </p>
+                        <h4 class="price">129,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 7.webp" alt="HP laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ‌تاپ 16 اینچی اچ‌پی مدل OmniBook X Flip </p>
+                        <h4 class="price"><del>238,500,000 </del> <sup>227,500,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">5%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 8.webp" alt="acer laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ تاپ 15.6 اینچی ایسر مدل Aspire Go 15 </p>
+                        <h4 class="price">94,880,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 9.webp" alt="dell laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ تاپ 14 اینچی دل مدل Wyse</p>
+                        <h4 class="price">600,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/laptop/laptop 10.webp" alt="dell laptop image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لپ‌تاپ</h3>
+                        <p class="description">لپ تاپ 15.6 اینچی دل مدل DC15250-15-Core i5 </p>
+                        <h4 class="price"><del>135,500,000 </del> <sup>131,600,000 </sup><sup>تومان</sup><sub
+                                class="offDetail">3%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Home Electric -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="homeElectric">لوازم خانگی برقی</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/TV.webp" alt="daewoo TV image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">لتلویزیون 55 اینچ ال ای دی هوشمند دوو مدل 55DM4000</p>
+                        <h4 class="price"><del>94,070,200 </del> <sup>88,500,400 </sup><sup>تومان</sup><sub
+                                class="offDetail">6%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/coffee maker.webp"
+                            alt="buoyant coffee maker image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">چای و قهوه‌ساز بویانت مدل Stylish Plus</p>
+                        <h4 class="price">26,335,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/meat grinder.webp"
+                            alt="gosonic meat grinder image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">گوشت کوب برقی چندکاره 1200 وات گوسونیک مدل GSB-845</p>
+                        <h4 class="price">5,100,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/fridge.webp" alt="daewoo fridge image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">یخچال فریزر ساید بای ساید 29 فوت دوو مدل </p>
+                        <h4 class="price">237,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/oven.webp" alt="akhavan oven image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">اجاق گاز صفحه ای اخوان مدل GI-35 NP</p>
+                        <h4 class="price"><del>49,909,800 </del> <sup>30,850,500 </sup><sup>تومان</sup><sub
+                                class="offDetail">39%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/dishwasher.webp" alt="daewoo dishwasher image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">ماشین ظرفشویی 14 نفره دوو مدل DD-F1492</p>
+                        <h4 class="price">79,900,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/robot vacuum cleaner.webp"
+                            alt="robot vacuum cleaner xiaomi image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">جارو رباتیک شیائومی مدل S40 Pro</p>
+                        <h4 class="price">56,800,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/microwave hisense.webp"
+                            alt="microwave hisense image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">مایکروویو 20 لیتر هایسنس مدل H20MOBS15</p>
+                        <h4 class="price">21,650,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/barista things.webp"
+                            alt="barista things set image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">ست تجهیزات باریستا گتر مدل Cube Box بسته 9 عددی</p>
+                        <h4 class="price"><del>2,450,800 </del> <sup>1,670,660 </sup><sup>تومان</sup><sub
+                                class="offDetail">32%</sub></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/Home Electric/daewoo laundry.webp" alt="daewoo laundry image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: لوازم خانگی برقی</h3>
+                        <p class="description">ماشین لباسشویی 7 کیلوگرم اتوماتیک دوو مدل DW-F0792</p>
+                        <h4 class="price">93,500,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Banners -->
+        <section class="clothingBanner">
+            <img class="banner" src="/project/project image/clothing/banner 2.webp" alt="clothing collection">
+        </section>
+
+
+        <!-- wearable -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="clothes">پوشاک</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/sleep wear women.webp" alt="red sleep wear image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">لباس خواب زنانه مدل S-01</p>
+                        <h4 class="price">899,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/women blue clothing set.webp" alt="blue cloth image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">ست نیم تنه و دامن راحتی زنانه دل آویز مدل </p>
+                        <h4 class="price">880,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/black t-shirt.webp" alt="black t-shirt image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">بادی آستین کوتاه زنانه فانریپ نیدل مدل F018</p>
+                        <h4 class="price">1,040,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/pink shirt.webp" alt="pink shirt image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">شومیز زنانه مدل اندامی کد 18</p>
+                        <h4 class="price">2,550,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/body suit red.webp" alt="red body suit image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">بادی زنانه نیدل مدل F018</p>
+                        <h4 class="price">1,040,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/crop blouse black.webp" alt="crop blouse black image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">کراپ شومیز زنانه آستین کوتاه تولیکا مدل 33140</p>
+                        <h4 class="price">1,558,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/shoes black.webp" alt="black shoes image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">صندل زنانه مدل نئون</p>
+                        <h4 class="price">699,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/black heels.webp" alt="black heels image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">کفش پاشنه‌دار زنانه دشوز مدل </p>
+                        <h4 class="price">5,066,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/men versace.webp" alt="men versace image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">تی شرت آستین بلند مردانه نخی طرح حروف مدل مونارک</p>
+                        <h4 class="price">1,260,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/clothing/men grey sweater.webp"
+                            alt="grey sweater for men image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: پوشاک</h3>
+                        <p class="description">پلیور یقه برگردان مردانه مدل 1213</p>
+                        <h4 class="price">923,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Banners -->
+        <section class="makeupBanners">
+
+            <div class="banner">
+                <img src="/project/project image/mackup and skin care/banner1.webp" alt="makeup collection">
+            </div>
+
+            <div class="banner">
+                <img src="/project/project image/mackup and skin care/banner2.webp" alt="makeup collection">
+            </div>
+
+        </section>
+
+        <!-- mackup and skin care -->
+        <section class="heading">
+
+            <div class="sectionTitle">
+                <h2 class="title" id="mackup">پوشاک</h2>
+                <button class="showAll">مشاهده همه</button>
+            </div>
+
+            <p class="subTitle">پیشنهادهایی مطابق سلیقه شما</p>
+
+        </section>
+
+        <section class="productContainer">
+            <div class="products">
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/shiglam foundation.webp"
+                            alt="shiglam foundation image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">کرم پودر مایع شیگلم مدل COMPLEXION PRO NUDE حجم 30 میلی‌لیتر</p>
+                        <h4 class="price">3,600,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/consiler.webp"
+                            alt="la farrerr concealer image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">کانسیلر لافارر مدل Anti-Age شماره 03</p>
+                        <h4 class="price">1,162,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/nars blush.webp" alt="nars blush image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">رژگونه نارس مدل orgm</p>
+                        <h4 class="price">12,415,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/eyes palet.webp"
+                            alt="eye mackup palet image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">پالت سایه چشم ولو مدل Sugar کد 00</p>
+                        <h4 class="price">2,000,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/nail polish.webp"
+                            alt="burgundy nail polish image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">لاک ناخن استایکس شماره S28</p>
+                        <h4 class="price">250,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/nail polish 2.webp"
+                            alt="purple shimer nail polish image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">لاک ناخن داتمه شماره C100</p>
+                        <h4 class="price">253,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/sunscream.webp"
+                            alt="prime sunscream image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">فلوئید ضدآفتاب بی‌رنگ پرایم SPF50 مدل C-Prime Fusion Water مناسب انواع
+                            پوست، حجم 40 میلی‌لیتر</p>
+                        <h4 class="price">799,800<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/valbenor moustriser.webp"
+                            alt=" valbenor moustriser image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">سرم آبرسان صورت والبنور مدل هیالورونیک اسید مناسب برای انواع پوست حجم 30
+                            میلی لیتر </p>
+                        <h4 class="price">648,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/kiko gloss.webp" alt="kiko gloss image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">لیپ گلاس کیکو میلانو مدل hydra شماره 17</p>
+                        <h4 class="price">3,665,510<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+                <div class="card">
+                    <div class="productImage">
+                        <img src="/project/project image/mackup and skin care/toner genobiotic.webp"
+                            alt="facial toner genobiotic image">
+                    </div>
+                    <div class="content">
+                        <h3 class="category">دسته‌بندی: آرایشی و بهداشتی</h3>
+                        <p class="description">تونر ژنوبایوتیک مدل آبرسان مناسب انواع پوست حجم 150 میلی لیتر</p>
+                        <h4 class="price">769,000<sup>تومان</sup></h4>
+                    </div>
+                    <button class="addToCart">افزودن به سبد</button>
+                </div>
+
+            </div>
+        </section>
+
+        <a href="#GoUp" class="moveUp"><span class="fa-solid fa-arrow-up"></span></a>
+
+    </main>
+
+    <header>
+        <div class="headerInfo">
+            <div class="logoIM">
+                <img src="/project/project image/logo.jpg" alt="sites logo">
+            </div>
+            <div class="siteTitle">
+                <h4>shoppign store</h4>
+            </div>
+            <nav class="headerList">
+                <ul>
+                    <li><a href="#home"><b>خانه</b></a></li>
+                    <li><a href="#aboutUs"><b>درباره ما</b></a></li>
+                    <li><a href="#off"><b>تخفیف</b></a></li>
+                    <li><a href="#audio"><b>پرفروش‌ترین‌ها</b></a></li>
+                </ul>
+            </nav>
+            <div class="searchBox">
+                <span class="fa-solid fa-search "></span>
+                <input type="search" placeholder="searching...">
+            </div>
+            <div class="HeaderButton">
+                <span class="signInButton"><a href="/frontEnd-portfolio/2..logIn-signIn-project/2..logIn-signIn-project/index.html"
+                        class="fa-solid fa-user userIcon " target="_self">
+                    </a></span>
+                <span class="cartButton">
+                    <a class="fa-solid fa-cart-shopping cartIcon" href=""></a>
+                    <span class="cartBadge" id="cartBadge">0</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div class="HamTitle">
+            <nav class="hambergur"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+
+            <div class="SideBarcover">
+                <div class="electricUnderline"></div>
+                <h3 class="TasideList">دسته‌بندی کالا‌ها</h3>
+            </div>
+        </div>
+
+        <nav class="ListMenu">
+            <ul class="list-menu">
+                <li><a href="#mobile">موبایل</a></li>
+                <li><a href="#stationery">لوازم تحریر</a></li>
+                <li><a href="#laptop">لپ‌تاپ</a></li>
+                <li><a href="#homeElectric">لوازم خانگی برقی</a></li>
+                <li><a href="#clothes">پوشاک</a></li>
+                <li><a href="#digital">لوازم دیجیتال</a></li>
+                <li><a href="#mackup">آرایشی و بهداشتی</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>
+        <div class="customerService">
+            <h4 id="aboutUs" class="serviceTitle">خدمات مشتریان</h4>
+            <ul>
+                <li>پاسخ به پرسش‌های متداول</li>
+                <li>رویه های بازگردانی کالا</li>
+                <li>حریم خصوصی</li>
+                <li>گزارش باگ</li>
+            </ul>
+        </div>
+
+        <div class="purchaseGuide">
+            <h4 class="purchaseTitle">راهنمای خرید از سایت</h4>
+            <ul>
+                <li>نحوه ثبت سفارش</li>
+                <li>رویه ارسال سفارش</li>
+                <li>شیوه های پرداخت</li>
+            </ul>
+
+        </div>
+
+        <div class="socialMedia">
+            <h4 class="socialTitle">با ماهمراه باشید!</h4>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+    <script src="./productsScript.js"></script>
+</body>
+
+</html>
