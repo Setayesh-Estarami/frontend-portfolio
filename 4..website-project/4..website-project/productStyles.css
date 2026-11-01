@@ -2,6 +2,23 @@
     font-family: "pari";
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 
 .layout {
     display: grid;
@@ -33,6 +50,7 @@ header {
     box-shadow: 5px 5px 10px #ccc,
         -5px -5px 10px #ccc;
     border-radius: 0px 0px 15px 15px;
+    z-index: 100;
 
 }
 
