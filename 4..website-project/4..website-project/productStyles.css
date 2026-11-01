@@ -1,4 +1,3 @@
-
 :root {
     --header-h: 100px;
 }
@@ -329,7 +328,7 @@ main {
 }
 
 .content {
-     flex: 1;
+    flex: 1;
     padding: 0px 10px;
 }
 
@@ -765,6 +764,11 @@ footer {
         width: 56px;
     }
 
+    .headerInfo {
+        gap: 8px;
+        padding-inline: 10px;
+    }
+
     .siteTitle,
     .headerList {
         display: none;
@@ -772,7 +776,26 @@ footer {
 
     .searchBox {
         flex: 1;
+        min-width: 0;
         width: auto;
+        height: auto;
+        padding-top: 0;
+        align-items: center;
+        max-width: 260px;
+    }
+
+    .searchBox>input {
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        height: 32px;
+        padding-inline: 10px;
+    }
+
+    .HeaderButton {
+        flex-direction: row;
+        gap: 8px;
+        margin-inline-start: auto;
     }
 
     /* sidebar becomes a bar under the header */
